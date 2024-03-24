@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="./img/diluc-removebg-preview.png">
+
+        <div class="header-left">
+            <a href="index.html">
+                <box-icon name='home'></box-icon> Trang chủ
+            </a>
+            <a href="./sanpham.html">
+                <box-icon name='book'></box-icon>Sản phẩm
+            </a>
+            <a href="./about.html">
+                <box-icon name='file-find'></box-icon>Về chúng tôi
+            </a>
+            <a href="./contact.html">
+                <box-icon name='phone'></box-icon>Liên hệ
+            </a>
+            <a href="./cart.html">
+                <box-icon name='shopping-bag'></box-icon>Giỏ hàng
+            </a>
+            <a href="./account.html">
+                <box-icon name='user'></box-icon>Tài khoản
+            </a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="company-info">
+            <h2>Books are a uniquely portable magic</h2>
+            <h1>D&emsp;I&emsp;L&emsp;U&emsp;C</h1>
+            <br><br><br>
+            <a href="#" class="btn btn-white">MUA NGAY</a>
+        </div>
+        <hr>
+        <br>
+        <h2>
+            <box-icon type='solid' name='food-menu'></box-icon> DANH MỤC SẢN PHẨM
+        </h2>
+        <br>
+        <div class="column">
+            <div class="danhmucsanpham">
+                <div class="ten">
+                    <h3>Văn học</h3>
+                    <img src="./img/toithayhoavangtrencoxanh.jpg" alt="" width="170px" height="200px">
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="danhmucsanpham">
+                <div class="ten">
+                    <h3>Tâm lý - Thao túng</h3>
+                    <img src="./img/thaotungtamli.jpg" alt="" width="170px" height="200px">
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="danhmucsanpham">
+                <div class="ten">
+                    <h3>Đối mặt - Thức tỉnh</h3>
+                    <img src="./img/hanhtinhcuamotkenghinhieu.jpg" alt="" width="170px" height="200px">
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="danhmucsanpham">
+                <div class="ten">
+                    <h3>Kỹ năng sống</h3>
+                    <img src="./img//doingandungngudai.jpg" alt="" width="170px" height="200px">
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="danhmucsanpham">
+                <div class="ten">
+                    <h3>Rèn luyện nhân cách</h3>
+                    <img src="./img/dacnhantam.jpg" alt="" width="170px" height="200px">
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="danhmucsanpham">
+                <div class="ten">
+                    <h3>Tiểu thuyết</h3>
+                    <img src="./img/camuchammat.jpg" alt="" width="170px" height="200px">
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="danhmucsanpham">
+                <div class="ten">
+                    <h3>Học tiếng anh</h3>
+                    <img src="./img/tuhoc2000tuvung" alt="" width="170px" height="200px">
+                </div>
+            </div>
+        </div>
+
+        <div class="slider">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+
+            <div class="slide-show">
+                <div class="item active">
+                    <img src="./img/book-g9ad1edf6c_640.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/book-gb9bb73604_1920.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/a-book-g74523090a_1920.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/a-book-gb91691e41_1920.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/pexels-sava-savov-15458230.jpg" alt="">
+                </div>
+            </div>
+
+
+
+            <p id="title">Ảnh
+                <span id="number">1</span> /
+                <span id="demo">5</span>
+            </p>
+        </div>
+
+
+        <hr>
+        <br><br>
+        <div class="sanphamcuachungtoi">
+            <h2>
+                <box-icon type='solid' name='basket'></box-icon> SẢN PHẨM CỦA CHÚNG TÔI
+            </h2>
+        </div>
+        
+        <div class="sanphamcontainer">
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+                        <div class="giamgia"><strong>25%</strong></div>
+                        <a href="./sanpham/hanhtinhcuamotkenghinhieu.html">
+                            <img src="./img/hanhtinhcuamotkenghinhieu.jpg" alt="" width="250px" height="230px">
+                            <h4>Hành tinh <br>của một kẻ nghĩ nhiều</h4>
+                        </a>
+                        <button class="big" type="button"
+                            onclick="themvaogio(1,'Hành tinh của một kẻ nghĩ nhiều',60000)">THÊM VÀO GIỎ HÀNG</button>
+                        <div class="gia">
+                            <p>64.500đ &emsp;&emsp;&emsp;&emsp;&emsp;<del>86.000đ</del><button> Đã bán 0</button></p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+                        <div class="giamgia"><strong>25%</strong></div>
+                        <a href="./sanpham/khongphaisoinhungcungdunglacuu.html">
+                            <img src="./img/_khong-phai-soi-nhung-cung-dung-la-cuu.jpg" alt="" width="250px" height="230px">
+                            <h4> Không phải sói<br>nhưng cũng đừng là cừu</h4>
+                        </a>
+                        <button class="big" type="button"
+                            onclick="themvaogio(2,'Không phải sói nhưng cũng đừng là cừu',89000)">THÊM VÀO
+                            GIỎ HÀNG</button>
+                        <div class="gia">
+                            <p>96.000đ &emsp;&emsp;&emsp;&emsp;&emsp;<del>128.000đ</del><button> Đã bán 0</button></p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+                        <div class="giamgia"><strong>25%</strong></div>
+                        <a href="./sanpham/tuoitredanggiabaonhieu.html">
+                            <img src="./img/tuoitredanggiabaonhiu.jpg" alt="" width="250px" height="230px">
+                            <h4>Tuổi trẻ <br>đáng giá bao nhiêu</h4>
+                        </a>
+                        <button class="big" type="button" onclick="themvaogio(3,'Tuổi trẻ đáng giá bao nhiêu?',66000)">THÊM
+                            VÀO GIỎ HÀNG</button>
+                        <div class="gia">
+                            <p>69.300đ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<del>90.000đ</del><button> Đã bán 0</button>
+                            </p>
+                            &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+                        <div class="giamgia"><strong>25%</strong></div>
+                        <a href="./sanpham/vithancuanhungquyetdinh.html">
+                            <img src="./img/vithancuanhungquyetdinh.jpg" alt="" width="250px" height="230px">
+                            <h4>Vị thần <br>của những quyết định</h4>
+                        </a>
+                        <button class="big" type="button" onclick="themvaogio(4,'Vị thần của những quyết định',60000)">THÊM
+                            VÀO GIỎ HÀNG</button>
+                        <div class="gia">
+                            <p>59.250đ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<del>79.000đ</del><button> Đã bán 0</button>
+                            </p>
+                            &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+                        <div class="giamgia"><strong>23%</strong></div>
+                        <a href="./sanpham/doingandungngudai.html">
+                            <img src="./img/doingandungngudai.jpg" alt="" width="250px" height="230px">
+                            <h4>Đời ngắn<br>đừng ngủ dài</h4>
+                        </a>
+                        <button class="big" type="button" onclick="themvaogio(5,'Đời ngắn đừng ngủ dài',56000)">THÊM VÀO
+                            GIỎ HÀNG</button>
+                        <div class="gia">
+                            <p>57.750đ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<del>75.000đ</del><button> Đã bán 0</button>
+                            </p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+                        <div class="giamgia"><strong>23%</strong></div>
+                        <a href="./sanpham/toithayhoavangtrencoxanh.html">
+                            <img src="./img/toithayhoavangtrencoxanh.jpg" alt="" width="250px" height="230px">
+                            <h4>Tôi thấy hoa vàng<br>trên cỏ xanh</h4>
+                        </a>
+                        <button class="big" type="button"
+                            onclick="themvaogio(6,'Tôi tháy hoa vàng trên cỏ xanh',96000)">THÊM VÀO GIỎ HÀNG</button>
+                        <div class="gia">
+                            <p>96.250đ &emsp;&emsp;&emsp;&emsp;&emsp;<del>125.000đ</del><button> Đã bán 0</button></p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+                        <div class="giamgia"><strong>25%</strong></div>
+                        <a href="./sanpham/thientaibentraikedienbenphai.html">
+                            <img src="./img/thientaibentraikedienbenphai.jpg" alt="" width="250px" height="230px">
+                            <h4>Thiên tài bên trái<br>kẻ điên bên phải</h4>
+                        </a>
+                        <button class="big" type="button"
+                            onclick="themvaogio(7,'Thiên tài bên trái, kẻ điên bên phải',135000)">THÊM VÀO
+                            GIỎ HÀNG</button>
+                        <div class="gia">
+                            <p>134.250đ &emsp;&emsp;&emsp;&emsp;&emsp;<del>179.000đ</del><button> Đã bán 0</button></p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            </a>
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+                        <div class="giamgia"><strong>20%</strong></div>
+                        <a href="./sanpham/tuhoc2000tuvung.html">
+                            <img src="./img/tuhoc2000tuvung" alt="" width="250px" height="230px">
+                            <h4>Tự học <br>2000 từ vựng tiếng anh</h4>
+                        </a>
+                        <button class="big" type="button" onclick="themvaogio(8,'Tự học 2000 từ vựng Tiếng Anh',52000)">THÊM
+                            VÀO GIỎ HÀNG</button>
+                        <div class="gia">
+                            <p>52.000đ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<del>65.000đ</del><button> Đã bán 0</button>
+                            </p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+                        <div class="giamgia"><strong>23%</strong></div>
+                        <a href="./sanpham/camuchammat.html">
+                            <img src="./img/camuchammat.jpg" alt="" width="250px" height="230px">
+                            <h4>Cá mực hầm mật</h4>
+                        </a>
+                        <button class="big" type="button" onclick="themvaogio(9,'Cá mực hầm mật',146000)">THÊM VÀO GIỎ
+                            HÀNG</button>
+                        <div class="gia">
+                            <p>116.000đ&emsp;&emsp;&emsp;&emsp;&emsp;<del>146.000đ</del><button> Đã bán 0</button></p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+    
+                        <div class="giamgia"><strong>23%</strong></div>
+                        <a href="./sanpham/caycamngot.html">
+                            <img src="./img/caycamngotcuatoi.jpg" alt="" width="250px" height="230px">
+                            <h4>Cây cam ngọt của tôi</h4>
+                        </a>
+                        <button class="big" type="button" onclick="themvaogio(10,'Cây cam ngọt của tôi',108000)">THÊM
+                            VÀO GIỎ HÀNG</button>
+                        <div class="gia">
+                            <p>83.160đ &emsp;&emsp;&emsp;&emsp;&emsp;<del>108.000đ</del><button> Đã bán 0</button></p>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            </a>
+                        </div>
+    
+                    </div>
+                </div>
+            </div></a>
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+                        <div class="giamgia"><strong>30%</strong></div>
+                        <a href="./sanpham/thaotungtamly.html">
+                            <img src="./img/thaotungtamli.jpg" alt="" width="250px" height="230px">
+                            <h4>Thao túng tâm lí </h4>
+                        </a>
+                        <button class="big" type="button" onclick="themvaogio(11,'Thao túng tâm lý',118000)">THÊM VÀO GIỎ
+                            HÀNG</button>
+                        <div class="gia">
+                            <p>118.300đ &emsp;&emsp;&emsp;&emsp;&emsp;<del>169.000đ</del><button> Đã bán 0</button></p>
+                            &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                        </div>
+                    </div>
+                </div>
+            </div></a>
+            <div class="columnsanpham">
+                <div class="sanpham">
+                    <div class="tensanpham">
+                        <div class="giamgia"><strong>23%</strong></div>
+                        <a href="./sanpham/dacnhantam.html">
+                            <img src="./img/dacnhantam.jpg" alt="" width="250px" height="230px">
+                            <h4>Đắc nhân tâm</h4>
+                        </a>
+                        <button class="big" type="button" onclick="themvaogio(12,'Đắc nhân tâm',60000)">THÊM VÀO GIỎ
+                            HÀNG</button>
+                        <div class="gia">
+                            <p>83.160đ &emsp;&emsp;&emsp;&emsp;&emsp;<del>108.000đ</del><button> Đã bán 0</button></p>
+                            &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                            <box-icon name='star'></box-icon>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="box">
+                <div class="logo">
+                    <img src="./img/TULEN-removebg-preview.png" alt="" width="200px" height="70px">
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>NỘI DUNG</h3>
+                <ul class="menu">
+                    <div class="item">
+                        <a href="./index.html">Trang chủ</a>
+                    </div>
+                    <div class="item">
+                        <a href="./sanpham.html">Sản phẩm</a>
+                    </div>
+                    <div class="item">
+                        <a href="./about.html">Về chúng tôi</a>
+                    </div>
+                    <div class="item">
+                        <a href="./contact.html">Liên hệ</a>
+                    </div>
+                    <div class="item">
+                        <a href="./account.html">Tài khoản</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                <div class="menu">
+                    <div class="item">
+                        <a href="">
+                            <box-icon name='phone'></box-icon> +841111111
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <box-icon name='mail-send'></box-icon> culidhksc@liam.moc
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="">
+                            <box-icon name='map'></box-icon> Tân Chánh Hiệp, Q12, TP.HCM
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box">
+                <h3>ĐĂNG KÍ NHẬN BẢN TIN MỚI NHẤT</h3>
+                <input type="text" placeholder="Địa chỉ email">
+                <button>Nhận tin</button>
+            </div>
+        </div>
+        <script src="./scripts/index.js"></script>
+</body>
+
+</html>

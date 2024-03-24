@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* reset css  */
+}
+
+body {
+    background-color: #dddddd;
+    border-radius: 30px 30px;
+
+}
+
+.header img {
+    width: 150px;
+    height: 60px;
+    margin-left: 200px;
+    margin-top: 25px;
+}
+
+.header {
+    background-color: white;
+    padding: 0px 10px;
+}
+
+.header a {
+    color: black;
+    padding: 9px;
+    /* phan dem ca 4 cho  */
+    text-decoration: none;
+    /* xoa gach chan  */
+    font-size: 20px;
+    line-height: 100px;
+    /* khoang cach giua cac dong */
+    border-radius: 4px;
+
+
+}
+
+.header a:hover {
+    color: black;
+    background-color: rgb(143, 149, 151);
+}
+
+.header-left {
+    float: right;
+    padding-right: 9px;
+}
+
+.company-info {
+    background-image: url(../img//tea-time-g6fc97c877_1920.jpg);
+    text-align: center;
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    border-radius: 30px 30px;
+    height: 700px;
+
+}
+
+.company-info h2 {
+    padding-top: 200px;
+    color: white;
+    text-shadow: 0 0 15px black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.slider {
+    width: 90%;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slider #prev,
+.slider #next {
+    opacity: 0.6;
+    margin-left: 20px;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: 60px;
+    font-size: 35px;
+    border: none;
+    background-color: #192041;
+    color: white;
+    top: 50%;
+    cursor: pointer;
+}
+
+.slider #next {
+    left: 94%;
+}
+
+.slider #prev:hover,
+.slider #next:hover {
+    background-color: red;
+}
+
+.slide-show > .item {
+    display: none;
+}
+
+.slide-show > .item.active {
+    display: block;
+}
+
+.slide-show > .item img {
+    width: 100%;
+    height: 500px;
+    animation: zoom 1s ease;
+}
+
+.sanphamcuachungtoi h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.company-info h1 {
+    margin-top: 40px;
+    color: white;
+    text-shadow: 0 0 15px black;
+    font-size: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+
+.btn:link,
+.btn-visited {
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+
+.content {
+    width: 1200px;
+}
+
+.column {
+    background-color: white;
+    width: 14%;
+    float: left;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.column:hover {
+    box-shadow: 0px 0px 10px green;
+
+    border-radius: 10px;
+}
+
+.danhmucsanpham {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.ten {
+    font-size: medium;
+
+    color: rgb(34, 72, 53);
+}
+
+.img {
+    max-width: 100%;
+}
+
+.columnsanpham {
+    width: 20%;
+    float: left;
+    margin-left: 60px;
+    background-color: white;
+    margin-top: 30px;
+
+
+}
+
+.columnsanpham:hover {
+    transform: scale(1.1);
+}
+
+.sanpham {
+    box-shadow: 0px 0px 5px gray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+
+}
+
+.tensanpham {
+    font-size: larger;
+    color: rgb(33, 33, 110);
+    text-align: center;
+}
+
+.tensanpham a {
+    text-decoration: none;
+}
+
+.giamgia {
+    color: green;
+    padding-top: 12px;
+    text-align: center;
+    width: 50px;
+    height: 48px;
+    background-color: #f6ff00;
+    border-radius: 50%;
+
+}
+
+.gia {
+    color: red;
+    font-weight: bold;
+}
+
+.gia del {
+    font-size: small;
+    color: gray;
+}
+
+.big {
+    background-color: rgb(42, 48, 80);
+    color: white;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px 0;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 0;
+    width: 260px;
+    background-color: rgb(240, 185, 173);
+    color: white;
+    border: none;
+    line-height: 3px;
+    border-radius: 50px;
+}
+
+
+.footer {
+    width: 100%;
+    background: rgb(0, 0, 0, 0.79);
+    height: 322px;
+    padding: 0px 63px;
+    padding-top: 57px;
+    display: flex;
+    /* chia cot */
+    justify-content: space-around;
+    /* khoang cach giua cac cot */
+}
+
+.footer .box {
+    width: 100%;
+    color: #fff;
+}
+
+.footer .box .menu {
+    margin-top: 40px;
+
+}
+
+.footer .box .menu .item {
+    margin-bottom: 12px;
+}
+
+.footer .box .menu .item a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .box input {
+    width: 294px;
+    height: 42px;
+    background: transparent;
+    padding-left: 20px;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer .box button {
+    background: #362f2f;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0.25);
+    width: 163px;
+    height: 38px;
+    margin-top: 29px;
+    color: white;
+}
+
+.sanphamcontainer {
+    margin-bottom: 1600px;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sanpham.css">
+    <title>Chi tiết</title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../img/diluc-removebg-preview.png">
+
+        <div class="header-left">
+            <a href="../index.html">
+                <box-icon name='home'></box-icon> Trang chủ
+            </a>
+            <a href="../sanpham.html">
+                <box-icon name='book'></box-icon>Sản phẩm
+            </a>
+            <a href="../about.html">
+                <box-icon name='file-find'></box-icon>Về chúng tôi
+            </a>
+            <a href="../contact.html">
+                <box-icon name='phone'></box-icon>Liên hệ
+            </a>
+            <a href="../cart.html">
+                <box-icon name='shopping-bag'></box-icon>Giỏ hàng
+            </a>
+            <a href="../account.html">
+                <box-icon name='user'></box-icon>Tài khoản
+            </a>
+        </div>
+    </div>
+    <div class="container">
+
+        
+        <!--Chi tiết-->
+        <div class="row">
+            <div class="first">
+                <div class="page">
+
+                </div>
+                <hr>
+            </div>
+            <div class="row-left mr20">
+                <div class="img">
+                    <img id="hinh" src="../img/_khong-phai-soi-nhung-cung-dung-la-cuu.jpg" width="640" height="640"
+                        alt="">
+                </div>
+                <!--Slide show-->
+                <div class="slideshow">
+                    <div class="slide-wrapper mr15">
+                        <img src="https://bom.so/KvpZk7" width="145" height="145" onclick="doihinh(this)">
+                    </div>
+                    <div class="slide-wrapper mr15">
+                        <img src="https://bom.so/7Mw8ja" width="145" height="145" onclick="doihinh(this)">
+                    </div>
+                    <div class="slide-wrapper mr15">
+                        <img src="https://bom.so/ozl1L0" width="145" height="145" onclick="doihinh(this)">
+                    </div>
+                    <div class="slide-wrapper mr15">
+                        <img src="https://bom.so/cRwL1W" width="145" height="145" onclick="doihinh(this)">
+                    </div>
+                </div>
+            </div>
+            <div class="row-right">
+                <div class="info">
+                    <div class="text">
+                        <h4><a href="#">Không phải sói nhưng cũng đừng là cừu</a></h4>
+                    </div>
+                    <div class="gia">
+                        <p>89.000đ &emsp;<del>128.000đ</del><br><button> Đã bán 0</button></p>
+                    </div>
+                    <hr>
+                    <form>
+                        <div class="col-2">
+                            <div class="SL">
+                                <label for="">SỐ LƯỢNG</label><br>
+                                <input type="number" min="1" value="1"><br>
+                                <label for="phanloai">Quà tặng</label>
+                                <select name="phanloai" id="phanloai">
+                                    <option value="0">Tùy chọn</option>
+                                    <option value="1">Không</option>
+                                    <option value="2">Tặng bọc sách</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="big" type="button"
+                            onclick="themvaogio(2,'Không phải sói nhưng cũng đừng là cừu',89000)"><a href="#">THÊM VÀO
+                                GIỎ HÀNG</a></button>
+                        <button class="small"><a href="#">THANH TOÁN</a></button>
+                    </form>
+
+                    <div class="title">
+                        <h5><a href="#">THÔNG TIN SẢN PHẨM</a></h5>
+                        <p>Tác giả: Lê Bảo Ngọc <br>
+
+                            Khổ sách: 14.5x20.5cm<br>
+
+                            Thể loại: sách kỹ năng sống<br>
+
+                            Bìa mềm<br>
+
+                            NXB Thế Giới<br>
+
+                            Số trang: 296 trang<br>
+
+                            ISBN: 9786043653083
+                            <br>
+                            Mã công ty: 8935325006685<br>
+
+                            Phát hành: Skybooks - Tủ sách Chữa lành<br>
+
+                            Giá bìa: 128.000 VNĐ<br>
+
+                            Ngày phát hành: 08/07/2022<br>
+
+                            Thông tin quà tặng kèm: bookmark 2 mặt
+                        </p>
+
+                    </div>
+                    <hr>
+                    <div class="title">
+                        <h5><a href="#">CÓ THỂ BẠN CHƯA BIẾT?</a></h5>
+                        <p>SÓI VÀ CỪU - BẠN KHÔNG TỐT NHƯ BẠN NGHĨ ĐÂU!
+
+                            Làn ranh của việc ngây thơ hay xấu xa đôi khi mỏng manh hơn bạn nghĩ.
+
+                            Bạn làm một việc mà mình cho là đúng, kết quả lại bị mọi người khiển trách.
+
+                            Bạn ủng hộ một quan điểm của ai đó, và số đông khác lại ủng hộ một quan điểm trái chiều.
+
+                            Rốt cuộc thì bạn sai hay họ sai?
+                            Những câu hỏi đầy tính tranh cãi như “Cứu người hay cứu chó?”, “Một kẻ thô lỗ trong lớp vỏ
+                            “thẳng tính” khác với người EQ thấp như thế nào?”, “Vì sao một bộ phận nữ giới lại victim
+                            blaming đối với nạn nhân bị xâm hại?”,... được tác giả đưa ra trong “Không phải sói nhưng
+                            cũng đừng là cừu”. Bằng từng chương sách của mình, tác giả vạch rõ cho bạn rằng “thật sự thế
+                            nào mới là người tốt”, ngây thơ và xấu xa có ranh giới rõ ràng như thế không, rốt cuộc bạn
+                            có là người tốt như mình vẫn luôn nghĩ?
+
+                            Trong thời đại mà mọi thứ đều rất chóng vánh này, ranh giới giữa tốt và xấu, đúng và sai đôi
+                            lúc là không tồn tại.
+
+                            Cái tốt mà chúng ta nghĩ, hóa ra lại là xấu trong mắt kẻ khác.
+
+                            Cái đúng ở thời điểm này, đến một thời điểm khác lại trở thành sai.
+
+                            Tốt đẹp hay xấu xa, thật khó phân định.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="../img/TULEN-removebg-preview.png" alt="" width="200px" height="70px">
+            </div>
+
+        </div>
+        <div class="box">
+            <h3>NỘI DUNG</h3>
+            <ul class="menu">
+                <div class="item">
+                    <a href="../index.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="../sanpham.html">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="../about.html">Về chúng tôi</a>
+                </div>
+                <div class="item">
+                    <a href="../contact.html">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="../account.html">Tài khoản</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+            <div class="menu">
+                <div class="item">
+                    <a href="">
+                        <box-icon name='phone'></box-icon> +841111111
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <box-icon name='mail-send'></box-icon> culidhksc@liam.moc
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <box-icon name='map'></box-icon> Tân Chánh Hiệp, Q12, TP.HCM
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="box">
+            <h3>ĐĂNG KÍ NHẬN BẢN TIN MỚI NHẤT</h3>
+            <input type="text" placeholder="Địa chỉ email">
+            <button>Nhận tin</button>
+        </div>
+    </div>
+    </div>
+
+    <script src="../scripts/detail.js"></script>
+
+</body>
+
+</html>

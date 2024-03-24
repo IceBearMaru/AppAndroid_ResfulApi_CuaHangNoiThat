@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sanpham.css">
+    <title>Chi tiết</title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../img/diluc-removebg-preview.png">
+
+        <div class="header-left">
+            <a href="../index.html"><box-icon name='home'></box-icon> Trang chủ</a>
+            <a href="../sanpham.html"><box-icon name='book'></box-icon>Sản phẩm</a>
+            <a href="../about.html"><box-icon name='file-find'></box-icon>Về chúng tôi</a>
+            <a href="../contact.html"><box-icon name='phone'></box-icon>Liên hệ</a>
+            <a href="../cart.html"><box-icon name='shopping-bag'></box-icon>Giỏ hàng</a>
+            <a href="../account.html"><box-icon name='user'></box-icon>Tài khoản </a>
+        </div>
+    </div>
+    <div class="container">
+
+        
+        <!--Chi tiết-->
+        <div class="row">
+            <div class="first">
+                <div class="page">
+
+                </div>
+                <hr>
+            </div>
+            <div class="row-left mr20">
+                <div class="img">
+                    <img id="hinh" src="../img/thientaibentraikedienbenphai.jpg" width="640" height="640" alt="">
+                </div>
+                <!--Slide show-->
+                <div class="slideshow">
+                    <div class="slide-wrapper mr15">
+                        <img src="https://bom.so/vJUigt" width="145" height="145" onclick="doihinh(this)">
+                    </div>
+                    <div class="slide-wrapper mr15">
+                        <img src="https://bom.so/5mRHbp" width="145" height="145" onclick="doihinh(this)">
+                    </div>
+                    <div class="slide-wrapper mr15">
+                        <img src="https://bom.so/QXGfhf" width="145" height="145" onclick="doihinh(this)">
+                    </div>
+                    <div class="slide-wrapper mr15">
+                        <img src="https://bom.so/NVttOK" width="145" height="145" onclick="doihinh(this)">
+                    </div>
+                </div>
+            </div>
+            <div class="row-right">
+                <div class="info">
+                    <div class="text">
+                        <h4><a href="#">Thiên tài bên trái, kẻ điên bên phải</a></h4>
+                    </div>
+                    <div class="gia">
+                        <p>135.000đ &emsp;<del>179.000đ</del><br><button> Đã bán 0</button></p>
+                    </div>
+                    <hr>
+                    <form>
+                        <div class="col-2">
+                            <div class="SL">
+                                <label for="">SỐ LƯỢNG</label><br>
+                                <input type="number" min="1" value="1"><br>
+                                <label for="phanloai">Quà tặng</label>
+                                <select name="phanloai" id="phanloai">
+                                    <option value="0">Tùy chọn</option>
+                                    <option value="1">Không</option>
+                                    <option value="2">Tặng bọc sách</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="big"type="button"
+                        onclick="themvaogio(7,'Thiên tài bên trái, kẻ điên bên phải',135000)"><a href="#">THÊM VÀO GIỎ HÀNG</a></button>
+                        <button class="small"><a href="#">THANH TOÁN</a></button>
+                    </form>
+
+                    <div class="title">
+                        <h5><a href="#">THÔNG TIN SẢN PHẨM</a></h5>
+                        <p>
+                            Công ty phát hành: AZ Việt Nam <br>
+                            Nhà xuất bản: NXB Thế Giới<br>
+                            Tác giả: Cao Minh<br>
+                            Loại bìa: Bìa Mềm<br>
+                            Số trang: 424<br>
+                            Năm xuất bản: 2021
+
+                        </p>
+
+                    </div>
+                    <hr>
+                    <div class="title">
+                        <h5><a href="#">CÓ THỂ BẠN CHƯA BIẾT?</a></h5>
+                        <p>
+                            Thiên Tài Bên Trái, Kẻ Điên Bên Phải NẾU MỘT NGÀY ANH THẤY TÔI ĐIÊN, THỰC RA CHÍNH LÀ ANH
+                            ĐIÊN ĐẤY! Hỡi những con người đang oằn mình trong cuộc sống, bạn biết gì về thế giới của
+                            mình? Là vô vàn thứ lý thuyết được các bậc vĩ nhân kiểm chứng, là luật lệ, là cả nghìn thứ
+                            sự thật bọc trong cái lốt hiển nhiên, hay những triết lý cứng nhắc của cuộc đời? Lại đây,
+                            vượt qua thứ nhận thức tẻ nhạt bị đóng kín bằng con mắt trần gian, khai mở toàn bộ suy nghĩ,
+                            để dòng máu trong bạn sục sôi trước những điều kỳ vĩ, phá vỡ mọi quy tắc. Thế giới sẽ gọi
+                            bạn là kẻ điên, nhưng vậy thì có sao? Ranh giới duy nhất giữa kẻ điên và thiên tài chẳng qua
+                            là một sợi chỉ mỏng manh: Thiên tài chứng minh được thế giới của mình, còn kẻ điên chưa kịp
+                            làm điều đó. Chọn trở thành một kẻ điên để vẫy vùng giữa nhân gian loạn thế hay khóa hết
+                            chúng lại, sống mãi một cuộc đời bình thường khiến bạn cảm thấy hạnh phúc hơn? Thiên tài bên
+                            trái, kẻ điên bên phải là cuốn sách dành cho những người điên rồ, những kẻ gây rối, những
+                            người chống đối, những mảnh ghép hình tròn trong những ô vuông không vừa vặn… những người
+                            nhìn mọi thứ khác biệt, không quan tâm đến quy tắc. Bạn có thể đồng ý, có thể phản đối, có
+                            thể vinh danh hay lăng mạ họ, nhưng điều duy nhất bạn không thể làm là phủ nhận sự tồn tại
+                            của họ. Đó là những người luôn tạo ra sự thay đổi trong khi hầu hết con người chỉ sống rập
+                            khuôn như một cái máy. Đa số đều nghĩ họ thật điên rồ nhưng nếu nhìn ở góc khác, ta lại thấy
+                            họ thiên tài. Bởi chỉ những người đủ điên nghĩ rằng họ có thể thay đổi thế giới mới là những
+                            người làm được điều đó. Chào mừng đến với thế giới của những kẻ điên.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="../img/TULEN-removebg-preview.png" alt="" width="200px" height="70px">
+            </div>
+
+        </div>
+        <div class="box">
+            <h3>NỘI DUNG</h3>
+            <ul class="menu">
+                <div class="item">
+                    <a href="../index.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="../sanpham.html">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="../about.html">Về chúng tôi</a>
+                </div>
+                <div class="item">
+                    <a href="../contact.html">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="../account.html">Tài khoản</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+            <div class="menu">
+                <div class="item">
+                    <a href=""><box-icon name='phone'></box-icon> +841111111</a>
+                </div>
+                <div class="item">
+                    <a href=""><box-icon name='mail-send'></box-icon> culidhksc@liam.moc</a>
+                </div>
+                <div class="item">
+                    <a href=""><box-icon name='map'></box-icon> Tân Chánh Hiệp, Q12, TP.HCM</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="box">
+            <h3>ĐĂNG KÍ NHẬN BẢN TIN MỚI NHẤT</h3>
+            <input type="text" placeholder="Địa chỉ email">
+            <button>Nhận tin</button>
+        </div>
+    </div>
+    </div>
+
+    <script src="../scripts/detail.js"></script>
+
+</body>
+
+</html>
