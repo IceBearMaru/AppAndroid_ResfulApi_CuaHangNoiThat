@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(https://cdn.pixabay.com/photo/2023/02/01/16/04/fog-7760708_960_720.jpg);
+            border-radius: 30px 30px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .header img {
+            width: 150px;
+            height: 60px;
+            margin-left: 200px;
+            margin-top: 25px;
+        }
+
+        .header {
+            background-color: white;
+            padding: 0px 10px;
+            /* phan dem top bottom: 0px, left right: 10px */
+        }
+
+        .header a {
+            color: black;
+            padding: 9px;
+            /* phan dem ca 4 cho  */
+            text-decoration: none;
+            /* xoa gach chan  */
+            font-size: 20px;
+            line-height: 100px;
+            /* khoang cach giua cac dong */
+            border-radius: 4px;
+            /* bo goc  */
+            
+
+        }
+
+        .header a:hover {
+            color: black;
+            background-color: rgb(143, 149, 151);
+        }
+
+        .header-left {
+            float: right;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .account {
+            margin-left: 25%;
+            margin-right: 25%;
+
+        }
+
+        input {
+            border-radius: 40px;
+            padding: 10px 0;
+            width: 730px;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            line-height: 20px;
+        }
+
+        #submit {
+            border-radius: 40px;
+            padding: 10px 20px;
+            width: 730px;
+            background-color: rgb(93, 206, 93);
+            color: white;
+            border: none;
+            line-height: 30px;
+        }
+
+        footer {
+            padding: 10px 0;
+            width: 730px;
+            line-height: 30px;
+
+            text-align: center;
+
+        }
+
+        button:hover {
+
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background: rgb(0, 0, 0, 0.79);
+            height: 322px;
+            padding: 0px 63px;
+            padding-top: 57px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer .box {
+            width: 3000px;
+            color: #fff;
+        }
+
+        .footer .box .menu {
+            margin-top: 40px;
+
+        }
+
+        .footer .box .menu .item {
+            margin-bottom: 12px;
+        }
+
+        .footer .box .menu .item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer .box input {
+            width: 294px;
+            height: 42px;
+            background: transparent;
+            padding-left: 20px;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .footer .box button {
+            background: #362f2f;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0.25);
+            width: 163px;
+            height: 38px;
+            margin-top: 29px;
+            color: white;
+        }
+
+        .searchTerm {
+            width: 100%;
+            border-right: none;
+            padding: 20px;
+            height: 20px;
+            border-radius: 10px;
+            outline: none;
+            color: black;
+        }
+    </style>
+
+    <body>
+        <div class="header">
+            <img src="./img/diluc-removebg-preview.png">
+
+            <div class="header-left">
+                <a href="./index.html"><box-icon name='home'></box-icon> Trang chủ</a>
+                <a href="sanpham.html"><box-icon name='book'></box-icon>Sản phẩm</a>
+                <a href="about.html"><box-icon name='file-find'></box-icon>Về chúng tôi</a>
+                <a href="contact.html"><box-icon name='phone'></box-icon>Liên hệ</a>
+                <a href="./cart.html"><box-icon name='shopping-bag'></box-icon>Giỏ hàng</a>
+                <a href="account.html"><box-icon name='user'></box-icon>Tài khoản</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="account">
+            <h1>ĐĂNG NHẬP</h1>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <form id="form" method="post" action="#" name="login">
+                <div class="form-group">
+                    <label for="username"><strong>Tên đăng nhập(*)</strong></label>
+                    <input class="searchTerm" type="text" name="username" id="username" placeholder="Tên đăng nhập" />
+                </div>
+                <div class="form-group">
+                    <label for="password"><strong>Password(*)</strong></label>
+                    <input class="searchTerm" type="password" name="password" id="password" placeholder="Mật khẩu" />
+                </div>
+                <div class="form-group">
+                    <label for="confirm_pass"><strong>Nhập lại password(*)</strong></label>
+                    <input class="searchTerm" type="password" name="confirm_pass" id="confirm_pass"
+                        placeholder="Nhập lại mật khẩu" />
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <input type="submit" name="action" id="submit" value="Đăng nhập" />
+                </div>
+
+            </form>
+            <footer>Bạn chưa có tài khoản???<a href="register.html">Đăng kí ngay</a></p>
+            </footer>
+        </div>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="P7a1bT1W"></script>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width=""
+            data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+        <div class="footer">
+            <div class="box">
+                <div class="logo">
+                    <img src="./img/TULEN-removebg-preview.png" alt="" width="200px" height="70px">
+                </div>
+
+            </div>
+            <div class="box">
+                <h3>NỘI DUNG</h3>
+                <ul class="menu">
+                    <div class="item">
+                        <a href="/index.html">Trang chủ</a>
+                    </div>
+                    <div class="item">
+                        <a href="sanpham.html">Sản phẩm</a>
+                    </div>
+                    <div class="item">
+                        <a href="about.html">Về chúng tôi</a>
+                    </div>
+                    <div class="item">
+                        <a href="contact.html">Liên hệ</a>
+                    </div>
+                    <div class="item">
+                        <a href="account.html">Tài khoản</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                <div class="menu">
+                    <div class="item">
+                        <a href=""><box-icon name='phone'></box-icon> +841111111</a>
+                    </div>
+                    <div class="item">
+                        <a href=""><box-icon name='mail-send'></box-icon> culidhksc@liam.moc</a>
+                    </div>
+                    <div class="item">
+                        <a href=""><box-icon name='map'></box-icon> Tân Chánh Hiệp, Q12, TP.HCM</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box">
+                <h3>ĐĂNG KÍ NHẬN BẢN TIN MỚI NHẤT</h3>
+                <input type="text" placeholder="Địa chỉ email">
+                <button>Nhận tin</button>
+            </div>
+        </div>
+    </body>
+
+</html>
+
+
+<script>
+    var inputs = document.forms['login'].getElementsByTagName('input');
+    var run_onchange = false;
+    function valid() {
+        var errors = false;
+        for (var i = 0; i < inputs.length; i++) {
+            var value = inputs[i].value;
+            var id = inputs[i].getAttribute('id');
+
+            // Tạo phần tử span lưu thông tin lỗi
+            var span = document.createElement('span');
+            // Nếu span đã tồn tại thì remove
+            var p = inputs[i].parentNode;
+            if (p.lastChild.nodeName == 'SPAN') { p.removeChild(p.lastChild); }
+
+            // Kiểm tra rỗng
+            if (value == '') {
+                span.innerHTML = 'Vui lòng nhập thông tin này';
+            } else {
+                // Kiểm tra password
+                if (id == 'password') {
+                    if (value.length < 6) { span.innerHTML = 'Password phải từ 6 ký tự'; }
+                    var pass = value;
+                }
+                // Kiểm tra password nhập lại
+                if (id == 'confirm_pass' && value != pass) { span.innerHTML = 'Password nhập lại chưa đúng'; }
+                // Kiểm tra số điện thoại
+            }
+
+            // Nếu có lỗi thì chèn span vào hồ sơ, chạy onchange, submit return false, highlight border
+            if (span.innerHTML != '') {
+                inputs[i].parentNode.appendChild(span);
+                errors = true;
+                run_onchange = true;
+                inputs[i].style.border = '1px solid #c6807b';
+                inputs[i].style.background = '#fffcf9';
+            }
+        }// end for
+
+        if (errors == false) { alert('Đăng nhập thành công'); }
+        return !errors;
+    }// end valid()
+
+    // Chạy hàm kiểm tra valid()
+    var register = document.getElementById('submit');
+    register.onclick = function () {
+        return valid();
+    }
+
+    // Kiểm tra lỗi với sự kiện onchange -> gọi lại hàm valid()
+    for (var i = 0; i < inputs.length; i++) {
+        var id = inputs[i].getAttribute('id');
+        inputs[i].onchange = function () {
+            if (run_onchange == true) {
+                this.style.border = '1px solid #999';
+                this.style.background = '#fff';
+                valid();
+            }
+        }
+    }// end for
+</script>

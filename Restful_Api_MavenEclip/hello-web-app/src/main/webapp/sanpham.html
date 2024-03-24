@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanpham</title>
+    <style>
+        /* Your existing styles here */
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./img/diluc-removebg-preview.png">
+        <div class="header-left">
+            <a href="./index.html"><box-icon name='home'></box-icon> Trang chủ</a>
+            <a href="./sanpham.html"><box-icon name='book'></box-icon>Sản phẩm</a>
+            <a href="./about.html"><box-icon name='file-find'></box-icon>Về chúng tôi</a>
+            <a href="./contact.html"><box-icon name='phone'></box-icon>Liên hệ</a>
+            <a href="./cart.html"><box-icon name='shopping-bag' ></box-icon>Giỏ hàng</a>
+            <a href="./account.html"><box-icon name='user'></box-icon>Tài khoản</a>
+        </div>
+    </div>
+
+    <h1>SẢN PHẨM</h1>
+    <p>"Đem đến cho độc giả những quyển sách chất lượng nhất"</p>
+    <hr>
+
+    <c:forEach var="product" items="${products}">
+        <div class="columnsanpham">
+            <div class="sanpham">
+                <div class="tensanpham">
+                    <div class="giamgia"><strong>${product.discount}%</strong></div>
+                    <img src="${product.imageUrl}" alt="${product.name}" width="250px" height="230px">
+                    <h4>${product.name}</h4>
+                    <div class="gia">
+                        <p>${product.price}đ &emsp;&emsp;&emsp;&emsp;&emsp;<del>${product.originalPrice}đ</del><button> Đã bán ${product.sold}</button></p>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<box-icon name='star'></box-icon><box-icon
+                            name='star'></box-icon><box-icon name='star'></box-icon><box-icon
+                            name='star'></box-icon><box-icon name='star'></box-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </c:forEach>
+
+    <div class="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="./img/TULEN-removebg-preview.png" alt="" width="200px" height="70px">
+            </div>
+        </div>
+        <div class="box">
+            <h3>NỘI DUNG</h3>
+            <ul class="menu">
+                <!-- Your existing menu items -->
+            </ul>
+        </div>
+        <div class="box">
+            <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+            <div class="menu">
+                <!-- Your existing customer care content -->
+            </div>
+        </div>
+        <div class="box">
+            <h3>ĐĂNG KÍ NHẬN BẢN TIN MỚI NHẤT</h3>
+            <input type="text" placeholder="Địa chỉ email">
+            <button>Nhận tin</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

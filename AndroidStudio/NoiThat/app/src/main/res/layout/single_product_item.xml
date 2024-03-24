@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Hình ảnh sản phẩm -->
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/product_image_1" />
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:id="@+id/textViewProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewProduct"
+        android:layout_marginStart="16dp"
+        android:text="Tên sản phẩm"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Giá sản phẩm -->
+    <TextView
+        android:id="@+id/textViewProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewProductName"
+        android:layout_marginStart="16dp"
+        android:text="Giá: $100"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Vật liệu sản phẩm -->
+    <TextView
+        android:id="@+id/textViewProductMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewProductPrice"
+        android:layout_marginStart="16dp"
+        android:text="Vật liệu: Gỗ"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Nơi sản xuất -->
+    <TextView
+        android:id="@+id/textViewProductOrigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewProductMaterial"
+        android:layout_marginStart="16dp"
+        android:text="Xuất xứ: Việt Nam"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</RelativeLayout>
